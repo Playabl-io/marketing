@@ -52,8 +52,8 @@
         </span>
       </p>
       <p class="prose text-center mt-4 mx-auto">
-        Playabl is the first purpose built community management tool for online
-        roleplaying communities
+        Playabl offers best in class tools to build and find communities that
+        play the games you like
       </p>
     </div>
     <div class="grid lg:grid-cols-2 xl:grid-cols-3 gap-4">

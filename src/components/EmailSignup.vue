@@ -10,18 +10,21 @@
   >
     <p
       v-if="state === 'subscribed'"
-      class="font-openSans font-semibold text-lg text-center h-[72px]"
+      class="font-openSans font-semibold text-lg text-center h-[72px] px-8"
     >
       Thank you! Please check you email and confirm your subscription
     </p>
-    <form v-else class="grid grid-cols-3 gap-2" @submit.prevent="subscribe">
-      <p class="text-sm font-semibold mb-1 col-span-full">
-        Playabl is currently beta. Sign up to get updates and notified on
+    <form v-else class="flex flex-col px-8" @submit.prevent="subscribe">
+      <h3 class="text-3xl mb-12 font-paytone text-center">
+        We'd love for you to join us
+      </h3>
+      <p class="mb-3">
+        Playabl is currently in beta. Sign up to get updates and notified on
         launch.
       </p>
       <input
         v-model="email"
-        class="rounded-md col-span-2 h-10"
+        class="rounded-md h-10 mb-2"
         aria-label="Email Address"
         placeholder="Email Address"
         required

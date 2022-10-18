@@ -4,7 +4,7 @@
       <slot></slot>
     </FeatureCardHeadline>
     <p class="text-xs text-slate-700 font-semibold mt-1 mb-4 uppercase">
-      premium plans only
+      premium communities only
     </p>
   </div>
 </template>

@@ -8,7 +8,6 @@
         Playabl
       </a>
       <div class="flex items-center gap-6 font-openSans">
-        <a href="#features" class="text-slate-900 no-underline"> Features </a>
         <a
           href="https://app.playabl.io/login"
           class="text-brand-500 hover:text-fuchsia-700 no-underline"
@@ -52,8 +51,8 @@
         </span>
       </p>
       <p class="prose text-center mt-4 mx-auto">
-        Playabl offers best in class tools to build and find communities that
-        play the games you like
+        Playabl offers best in class tools to build, manage, and find
+        roleplaying communities and games
       </p>
     </div>
     <div class="grid lg:grid-cols-2 xl:grid-cols-3 gap-4">
@@ -64,7 +63,7 @@
         </FeatureCardHeadline>
         <p>
           View all of your community's games in one place, and use convenient
-          filters and search options to find games of most interest to you
+          filters and search options to find the games of most interest to you
         </p>
       </FeatureCard>
       <FeatureCard>
@@ -73,8 +72,8 @@
           <p class="text-lg font-semibold">Game RSVPs and Waitlist</p>
         </FeatureCardHeadline>
         <p>
-          Every game has an RSVP and Waitlist, and players are automatically
-          notified when they are pulled from the waitlist
+          Every game has RSVP and Waitlist tracking, and players are
+          automatically notified when they are pulled from the waitlist
         </p>
       </FeatureCard>
       <FeatureCard>
@@ -93,27 +92,21 @@
           <p class="text-lg font-semibold">User profiles</p>
         </FeatureCardHeadline>
         <p>
-          Create and manage your user profile, including linking to your own
-          projects and games on
-          <a
-            href="https://itch.io"
-            target="_blank"
-            class="text-blue-700 hover:underline"
-            >Itch.io</a
-          >
+          Create and manage your user profile, and promote your own projects and
+          games
         </p>
       </FeatureCard>
       <FeatureCard>
-        <PremiumFeatureCardHeadline>
+        <FeatureCardHeadline>
           <CurrencyDollarIcon class="h-6 w-6 text-brand-500" />
           <p class="text-lg font-semibold">
             Paid games, membership, and events
           </p>
-        </PremiumFeatureCardHeadline>
+        </FeatureCardHeadline>
 
         <p>
-          Collect payment for games or membership, and plan events that can have
-          a flat fee or per game ticket model
+          Collect payment for games or membership, and plan and run special
+          events for your community
         </p>
       </FeatureCard>
       <FeatureCard>
@@ -122,14 +115,131 @@
           <p class="text-lg font-semibold">Integrations</p>
         </PremiumFeatureCardHeadline>
         <p>
-          Integrate to where your community hangs out including Discord, Slack,
-          or anywhere that receives an HTTP request
+          Integrate to where your community hangs out — including Discord,
+          Slack, or anywhere that receives an HTTP request — and never miss a
+          game post
         </p>
       </FeatureCard>
+      <GhostButton
+        class="col-span-full hover:bg-slate-200"
+        @click="goToComparison"
+      >
+        See how Playabl compares
+      </GhostButton>
     </div>
-    <div class="self-center">
-      <EmailSignup />
+  </section>
+  <section
+    class="min-h-screen py-12 px-8 font-openSans bg-gradient-to-b from-rose-200 via-rose-200 to-rose-300 text-brand-500 grid md:grid-cols-2 gap-12"
+  >
+    <p
+      class="max-w-2xl p-4 text-4xl font-semibold leading-relaxed self-center font-paytone"
+    >
+      Playabl improves the experience for players and communities
+    </p>
+    <div class="grid gap-8 self-center">
+      <div>
+        <h3 class="font-bold mb-1">For Players</h3>
+        <p class="text-lg leading-normal">
+          Stop scrolling through endless Discord groups and looking-for-game
+          posts, and use smart tools to find groups that share your interests
+          and play style.
+        </p>
+      </div>
+      <div>
+        <h3 class="font-bold mb-1">For Communities</h3>
+        <p class="text-lg leading-normal">
+          Attract more members, and level up your community management with
+          purpose built tools. Give your members tools they'll love to use.
+        </p>
+      </div>
     </div>
+    <div class="col-span-full grid place-content-center">
+      <PrimaryButton @click="goToSignUp">Find your community</PrimaryButton>
+    </div>
+  </section>
+  <section
+    id="comparison"
+    class="min-h-screen bg-white font-openSans py-12 px-8"
+  >
+    <h3 class="text-4xl text-center font-paytone mb-12">
+      How Playabl Compares
+    </h3>
+    <div class="overflow-x-auto">
+      <table class="rounded-lg w-full min-w-[720px]">
+        <thead>
+          <tr class="comparison-table-grid-headers">
+            <th></th>
+            <th>Playabl</th>
+            <th>Chat apps w/ bots</th>
+            <th>Reddit</th>
+            <th>Roll 20</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="comparison-table-grid">
+            <td class="justify-self-start">
+              Discover communities and easily find groups that match your
+              interests
+            </td>
+            <td><CheckCircleIcon class="h-6 w-6 text-green-600" /></td>
+            <td><XCircleIcon class="h-6 w-6 text-red-600" /></td>
+            <td><CheckCircleIcon class="h-6 w-6 text-green-600" /></td>
+            <td><XCircleIcon class="h-6 w-6 text-red-600" /></td>
+          </tr>
+          <tr class="comparison-table-grid">
+            <td class="justify-self-start">
+              Search for games based on system, tags, use of safety tools, and
+              full text
+            </td>
+            <td><CheckCircleIcon class="h-6 w-6 text-green-600" /></td>
+            <td><XCircleIcon class="h-6 w-6 text-red-600" /></td>
+            <td><XCircleIcon class="h-6 w-6 text-red-600" /></td>
+            <td><XCircleIcon class="h-6 w-6 text-red-600" /></td>
+          </tr>
+          <tr class="comparison-table-grid">
+            <td class="justify-self-start">
+              Easily manage game RSVPs, waitlist, and details from a dedicated
+              page
+            </td>
+            <td><CheckCircleIcon class="h-6 w-6 text-green-600" /></td>
+            <td><XCircleIcon class="h-6 w-6 text-red-600" /></td>
+            <td><XCircleIcon class="h-6 w-6 text-red-600" /></td>
+            <td><XCircleIcon class="h-6 w-6 text-red-600" /></td>
+          </tr>
+          <tr class="comparison-table-grid">
+            <td class="justify-self-start">
+              Setup and run special events for the community
+            </td>
+            <td><CheckCircleIcon class="h-6 w-6 text-green-600" /></td>
+            <td><CheckCircleIcon class="h-6 w-6 text-green-600" /></td>
+            <td><XCircleIcon class="h-6 w-6 text-red-600" /></td>
+            <td><XCircleIcon class="h-6 w-6 text-red-600" /></td>
+          </tr>
+          <tr class="comparison-table-grid">
+            <td class="justify-self-start">
+              Easily and securely collect payment for games and memberships
+            </td>
+            <td><CheckCircleIcon class="h-6 w-6 text-green-600" /></td>
+            <td><XCircleIcon class="h-6 w-6 text-red-600" /></td>
+            <td><XCircleIcon class="h-6 w-6 text-red-600" /></td>
+            <td><XCircleIcon class="h-6 w-6 text-red-600" /></td>
+          </tr>
+          <tr class="comparison-table-grid">
+            <td class="justify-self-start">
+              Power up your communities with integrations so you'll never miss a
+              game posting or user joining
+            </td>
+            <td><CheckCircleIcon class="h-6 w-6 text-green-600" /></td>
+            <td><CheckCircleIcon class="h-6 w-6 text-green-600" /></td>
+            <td><CheckCircleIcon class="h-6 w-6 text-green-600" /></td>
+            <td><XCircleIcon class="h-6 w-6 text-red-600" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section id="signup" class="py-12 grid justify-items-center min-h-screen">
+    <EmailSignup />
   </section>
 </template>
 
@@ -144,15 +254,40 @@ import {
   CurrencyDollarIcon,
   BoltIcon,
   UserIcon,
+  CheckCircleIcon,
+  XCircleIcon,
 } from "@heroicons/vue/24/outline";
 import { CalendarDaysIcon } from "@heroicons/vue/24/solid";
 import FeatureCardHeadline from "../components/FeatureCardHeadline.vue";
 import PremiumFeatureCardHeadline from "../components/PremiumFeatureCardHeadline.vue";
+import GhostButton from "../components/GhostButton.vue";
 
 function goToFeatures() {
   const el = document.getElementById("features");
   el?.scrollIntoView({ behavior: "smooth" });
 }
+function goToComparison() {
+  const el = document.getElementById("comparison");
+  el?.scrollIntoView({ behavior: "smooth" });
+}
+function goToSignUp() {
+  const el = document.getElementById("signup");
+  el?.scrollIntoView({ behavior: "smooth" });
+}
 </script>
 
-<style scoped></style>
+<style scoped>
+.comparison-table-grid-headers {
+  display: grid;
+  grid-template-columns: 34% 16% 16% 16% 16%;
+  @apply px-6;
+}
+.comparison-table-grid {
+  @apply p-6 even:bg-slate-50 rounded-lg;
+  display: grid;
+  grid-template-columns: 34% 16% 16% 16% 16%;
+  justify-items: center;
+  align-items: center;
+  @apply border border-b border-t-0 border-l-0 border-r-0 border-b-slate-50 last:border-none;
+}
+</style>

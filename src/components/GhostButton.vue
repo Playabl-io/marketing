@@ -1,6 +1,6 @@
 <template>
   <base-button
-    class="bg-inherit hover:bg-gray-100 dark:hover:bg-gray-700 text-current dark:text-slate-100"
+    class="bg-inherit hover:bg-slate-200 text-slate-700"
     v-bind="$attrs"
   >
     <slot></slot>

@@ -120,21 +120,18 @@
           game post
         </p>
       </FeatureCard>
-      <GhostButton
-        class="col-span-full hover:bg-slate-200"
-        @click="goToComparison"
-      >
-        See how Playabl compares
+      <GhostButton class="col-span-full" @click="goToComparison">
+        See how Playabl compares <ChevronDoubleDownIcon class="h-5 w-5 ml-1" />
       </GhostButton>
     </div>
   </section>
   <section
-    class="min-h-screen py-12 px-8 font-openSans bg-gradient-to-b from-rose-200 via-rose-200 to-rose-300 text-brand-500 grid md:grid-cols-2 gap-12"
+    class="px-8 py-16 min-h-[75vh] font-openSans bg-rose-200 text-brand-500 grid md:grid-cols-2 gap-12"
   >
     <p
       class="max-w-2xl p-4 text-4xl font-semibold leading-relaxed self-center font-paytone"
     >
-      Playabl improves the experience for players and communities
+      Playabl improves the experience for players and community managers
     </p>
     <div class="grid gap-8 self-center">
       <div>
@@ -146,10 +143,11 @@
         </p>
       </div>
       <div>
-        <h3 class="font-bold mb-1">For Communities</h3>
+        <h3 class="font-bold mb-1">For Community Managers</h3>
         <p class="text-lg leading-normal">
-          Attract more members, and level up your community management with
-          purpose built tools. Give your members tools they'll love to use.
+          Attract members that match your group's culture and play style, and
+          level up your community management with purpose built tools. Give your
+          members tools they'll love to use.
         </p>
       </div>
     </div>
@@ -238,7 +236,10 @@
       </table>
     </div>
   </section>
-  <section id="signup" class="py-12 grid justify-items-center min-h-screen">
+  <section
+    id="signup"
+    class="pt-16 pb-32 grid place-items-center min-h-screen md:min-h-[75vh]"
+  >
     <EmailSignup />
   </section>
 </template>
@@ -258,6 +259,7 @@ import {
   XCircleIcon,
 } from "@heroicons/vue/24/outline";
 import { CalendarDaysIcon } from "@heroicons/vue/24/solid";
+import { ChevronDoubleDownIcon } from "@heroicons/vue/20/solid";
 import FeatureCardHeadline from "../components/FeatureCardHeadline.vue";
 import PremiumFeatureCardHeadline from "../components/PremiumFeatureCardHeadline.vue";
 import GhostButton from "../components/GhostButton.vue";

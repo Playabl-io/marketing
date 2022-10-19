@@ -162,75 +162,142 @@
     <h3 class="text-4xl text-center font-paytone mb-12">
       How Playabl Compares
     </h3>
-    <div class="overflow-x-auto">
-      <table class="rounded-lg w-full min-w-[720px]">
-        <thead>
-          <tr class="comparison-table-grid-headers">
-            <th></th>
-            <th>Playabl</th>
-            <th>Chat apps w/ bots</th>
-            <th>Reddit</th>
-            <th>Roll 20</th>
-          </tr>
-        </thead>
+    <div>
+      <table class="w-full">
+        <div
+          class="sticky md:relative top-0 comparison-table-grid-headers bg-white py-4 md:py-0 px-6 text-center"
+        >
+          <div
+            class="justify-self-center self-end font-semibold text-sm md:text-lg [grid-area:item]"
+          ></div>
+          <div
+            class="justify-self-center self-end font-semibold text-sm md:text-lg [grid-area:playabl]"
+          >
+            Playabl
+          </div>
+          <div
+            class="justify-self-center self-end font-semibold text-sm md:text-lg [grid-area:chat]"
+          >
+            Chat apps w/ bots
+          </div>
+          <div
+            class="justify-self-center self-end font-semibold text-sm md:text-lg [grid-area:reddit]"
+          >
+            Reddit
+          </div>
+          <div
+            class="justify-self-center self-end font-semibold text-sm md:text-lg [grid-area:roll20]"
+          >
+            Roll 20
+          </div>
+        </div>
         <tbody>
           <tr class="comparison-table-grid">
-            <td class="justify-self-start">
+            <td class="justify-self-start [grid-area:item]">
               Discover communities and easily find groups that match your
               interests
             </td>
-            <td><CheckCircleIcon class="h-6 w-6 text-green-600" /></td>
-            <td><XCircleIcon class="h-6 w-6 text-red-600" /></td>
-            <td><CheckCircleIcon class="h-6 w-6 text-green-600" /></td>
-            <td><XCircleIcon class="h-6 w-6 text-red-600" /></td>
+            <td class="[grid-area:playabl] pt-4 md:pt-0">
+              <CheckCircleIcon class="h-6 w-6 text-green-600" />
+            </td>
+            <td class="[grid-area:chat] pt-4 md:pt-0">
+              <XCircleIcon class="h-6 w-6 text-red-600" />
+            </td>
+            <td class="[grid-area:reddit] pt-4 md:pt-0">
+              <CheckCircleIcon class="h-6 w-6 text-green-600" />
+            </td>
+            <td class="[grid-area:roll20] pt-4 md:pt-0">
+              <XCircleIcon class="h-6 w-6 text-red-600" />
+            </td>
           </tr>
           <tr class="comparison-table-grid">
-            <td class="justify-self-start">
+            <td class="justify-self-start [grid-area:item]">
               Search for games based on system, tags, use of safety tools, and
               full text
             </td>
-            <td><CheckCircleIcon class="h-6 w-6 text-green-600" /></td>
-            <td><XCircleIcon class="h-6 w-6 text-red-600" /></td>
-            <td><XCircleIcon class="h-6 w-6 text-red-600" /></td>
-            <td><XCircleIcon class="h-6 w-6 text-red-600" /></td>
+            <td class="[grid-area:playabl] pt-4 md:pt-0">
+              <CheckCircleIcon class="h-6 w-6 text-green-600" />
+            </td>
+            <td class="[grid-area:chat] pt-4 md:pt-0">
+              <XCircleIcon class="h-6 w-6 text-red-600" />
+            </td>
+            <td class="[grid-area:reddit] pt-4 md:pt-0">
+              <XCircleIcon class="h-6 w-6 text-red-600" />
+            </td>
+            <td class="[grid-area:roll20] pt-4 md:pt-0">
+              <XCircleIcon class="h-6 w-6 text-red-600" />
+            </td>
           </tr>
           <tr class="comparison-table-grid">
-            <td class="justify-self-start">
+            <td class="justify-self-start [grid-area:item]">
               Easily manage game RSVPs, waitlist, and details from a dedicated
               page
             </td>
-            <td><CheckCircleIcon class="h-6 w-6 text-green-600" /></td>
-            <td><XCircleIcon class="h-6 w-6 text-red-600" /></td>
-            <td><XCircleIcon class="h-6 w-6 text-red-600" /></td>
-            <td><XCircleIcon class="h-6 w-6 text-red-600" /></td>
-          </tr>
-          <tr class="comparison-table-grid">
-            <td class="justify-self-start">
-              Setup and run special events for the community
+            <td class="[grid-area:playabl] pt-4 md:pt-0">
+              <CheckCircleIcon class="h-6 w-6 text-green-600" />
             </td>
-            <td><CheckCircleIcon class="h-6 w-6 text-green-600" /></td>
-            <td><CheckCircleIcon class="h-6 w-6 text-green-600" /></td>
-            <td><XCircleIcon class="h-6 w-6 text-red-600" /></td>
-            <td><XCircleIcon class="h-6 w-6 text-red-600" /></td>
+            <td class="[grid-area:chat] pt-4 md:pt-0">
+              <XCircleIcon class="h-6 w-6 text-red-600" />
+            </td>
+            <td class="[grid-area:reddit] pt-4 md:pt-0">
+              <XCircleIcon class="h-6 w-6 text-red-600" />
+            </td>
+            <td class="[grid-area:roll20] pt-4 md:pt-0">
+              <XCircleIcon class="h-6 w-6 text-red-600" />
+            </td>
           </tr>
           <tr class="comparison-table-grid">
-            <td class="justify-self-start">
+            <td class="justify-self-start [grid-area:item]">
+              Setup and run special events for the community with a dedicated
+              event calendar
+            </td>
+            <td class="[grid-area:playabl] pt-4 md:pt-0">
+              <CheckCircleIcon class="h-6 w-6 text-green-600" />
+            </td>
+            <td class="[grid-area:chat] pt-4 md:pt-0">
+              <XCircleIcon class="h-6 w-6 text-red-600" />
+            </td>
+            <td class="[grid-area:reddit] pt-4 md:pt-0">
+              <XCircleIcon class="h-6 w-6 text-red-600" />
+            </td>
+            <td class="[grid-area:roll20] pt-4 md:pt-0">
+              <XCircleIcon class="h-6 w-6 text-red-600" />
+            </td>
+          </tr>
+          <tr class="comparison-table-grid">
+            <td class="justify-self-start [grid-area:item]">
               Easily and securely collect payment for games and memberships
             </td>
-            <td><CheckCircleIcon class="h-6 w-6 text-green-600" /></td>
-            <td><XCircleIcon class="h-6 w-6 text-red-600" /></td>
-            <td><XCircleIcon class="h-6 w-6 text-red-600" /></td>
-            <td><XCircleIcon class="h-6 w-6 text-red-600" /></td>
+            <td class="[grid-area:playabl] pt-4 md:pt-0">
+              <CheckCircleIcon class="h-6 w-6 text-green-600" />
+            </td>
+            <td class="[grid-area:chat] pt-4 md:pt-0">
+              <XCircleIcon class="h-6 w-6 text-red-600" />
+            </td>
+            <td class="[grid-area:reddit] pt-4 md:pt-0">
+              <XCircleIcon class="h-6 w-6 text-red-600" />
+            </td>
+            <td class="[grid-area:roll20] pt-4 md:pt-0">
+              <XCircleIcon class="h-6 w-6 text-red-600" />
+            </td>
           </tr>
           <tr class="comparison-table-grid">
-            <td class="justify-self-start">
+            <td class="justify-self-start [grid-area:item]">
               Power up your communities with integrations so you'll never miss a
               game posting or user joining
             </td>
-            <td><CheckCircleIcon class="h-6 w-6 text-green-600" /></td>
-            <td><CheckCircleIcon class="h-6 w-6 text-green-600" /></td>
-            <td><CheckCircleIcon class="h-6 w-6 text-green-600" /></td>
-            <td><XCircleIcon class="h-6 w-6 text-red-600" /></td>
+            <td class="[grid-area:playabl] pt-4 md:pt-0">
+              <CheckCircleIcon class="h-6 w-6 text-green-600" />
+            </td>
+            <td class="[grid-area:chat] pt-4 md:pt-0">
+              <CheckCircleIcon class="h-6 w-6 text-green-600" />
+            </td>
+            <td class="[grid-area:reddit] pt-4 md:pt-0">
+              <CheckCircleIcon class="h-6 w-6 text-green-600" />
+            </td>
+            <td class="[grid-area:roll20] pt-4 md:pt-0">
+              <XCircleIcon class="h-6 w-6 text-red-600" />
+            </td>
           </tr>
         </tbody>
       </table>
@@ -281,15 +348,40 @@ function goToSignUp() {
 <style scoped>
 .comparison-table-grid-headers {
   display: grid;
-  grid-template-columns: 34% 16% 16% 16% 16%;
+  grid-template-areas:
+    "item item item item"
+    "playabl chat reddit roll20";
+  grid-template-columns: 25% 25% 25% 25%;
   @apply px-6;
 }
+
 .comparison-table-grid {
   @apply p-6 even:bg-slate-50 rounded-lg;
   display: grid;
-  grid-template-columns: 34% 16% 16% 16% 16%;
+  grid-template-areas:
+    "item item item item"
+    "playabl chat reddit roll20";
+  grid-template-columns: 25% 25% 25% 25%;
   justify-items: center;
   align-items: center;
   @apply border border-b border-t-0 border-l-0 border-r-0 border-b-slate-50 last:border-none;
+}
+
+@media screen(md) {
+  .comparison-table-grid-headers {
+    display: grid;
+    grid-template-areas: "item playabl chat reddit roll20";
+    grid-template-columns: 34% 16% 16% 16% 16%;
+    @apply px-6;
+  }
+  .comparison-table-grid {
+    @apply p-6 even:bg-slate-50 rounded-lg;
+    display: grid;
+    grid-template-areas: "item playabl chat reddit roll20";
+    grid-template-columns: 34% 16% 16% 16% 16%;
+    justify-items: center;
+    align-items: center;
+    @apply border border-b border-t-0 border-l-0 border-r-0 border-b-slate-50 last:border-none;
+  }
 }
 </style>

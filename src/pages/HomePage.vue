@@ -309,6 +309,17 @@
   >
     <EmailSignup />
   </section>
+  <footer class="bg-gray-100 p-12 flex justify-center gap-6">
+    <a
+      class="hover:underline"
+      target="_blank"
+      href="https://app.playabl.io/privacy"
+      >Privacy policy</a
+    >
+    <a class="hover:underline" target="_blank" href="https://app.playabl.io/tos"
+      >Terms of service</a
+    >
+  </footer>
 </template>
 
 <script setup lang="ts">
